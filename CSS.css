@@ -1,0 +1,54 @@
+*{
+	text-align: right;
+}
+.btn{
+	border-radius: 30px;
+	transition: all 1 sec;
+	border-style: none;
+}
+.btn-xl{
+	padding: 0.8rem 1.1rem;
+
+}
+.btn-xl:hover{
+	transform: scale(1.05);
+	background-color: #c76918;
+	border-color: #c76918;
+}
+
+body{
+	background: url(image.jpg) no-repeat center center fixed;
+	background-size: cover;
+	text-align: center;
+	font: fantasy;
+}
+.white{
+	color: #063f5a;
+	text-align: center;
+}
+.nav-item{
+	color: white;
+}
+.images{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+img{
+	width: 500px;
+	height: 450px;
+	margin: 10px;
+	transition: all 0.5s;
+}
+img:hover{
+	transform: scale(1.1);
+
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
