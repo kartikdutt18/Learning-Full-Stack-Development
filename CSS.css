@@ -1,10 +1,27 @@
 *{
 	text-align: right;
+	justify-content: center;
+	align-content: center;
+}
+.sticky{
+	position: fixed;
+	top:0;
+	width: 100%;
+
+}
+.rel{
+	top:30px;
+	position: relative;
+	padding: 30px 30px 30px 30px;
+}
+.gaps{
+	top:10px;
 }
 .btn{
 	border-radius: 30px;
 	transition: all 1 sec;
 	border-style: none;
+
 }
 .btn-xl{
 	padding: 0.8rem 1.1rem;
@@ -14,14 +31,10 @@
 	transform: scale(1.05);
 	background-color: #c76918;
 	border-color: #c76918;
+
 }
 
-body{
-	background: url(image.jpg) no-repeat center center fixed;
-	background-size: cover;
-	text-align: center;
-	font: fantasy;
-}
+
 .white{
 	color: #063f5a;
 	text-align: center;
@@ -29,16 +42,25 @@ body{
 .nav-item{
 	color: white;
 }
+/*
 .images{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+} 
+*/
+.images{
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: repeat(auto-fill,500px);
+	grid-template-rows: 1fr;
+	justify-items: center;
+	justify-content: center;
 }
-
 
 img{
 	width: 500px;
-	height: 450px;
+	height: 70vh;
 	margin: 10px;
 	transition: all 0.5s;
 }
@@ -52,3 +74,10 @@ li {
 	display: inline-block;
 }
 
+body{
+	background: url(image.jpg) no-repeat center center fixed;
+	background-size: cover;
+	text-align: center;
+	font: fantasy;
+	justify-content: center;
+}
